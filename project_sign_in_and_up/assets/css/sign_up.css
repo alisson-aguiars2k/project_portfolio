@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: rgb(2, 57, 175);
+    --cor02: rgb(255, 255, 255);
+
+    --font_destaque: ;
+    --font_padrao: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: var(--cor02);
+}
+input, label {
+  display: block;
+  width: 100%;
+}
+input:focus, label:focus {
+  outline: none;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100vw;
+  width: 500px;
+  height: 600px;
+  background-color: var(--cor01);
+  padding: 5%;
+  border-radius: 40px 0px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: var(--cor02);
+}
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full_box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half_box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 40px;
+  padding: 10px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+input:focus {
+  border-color: lightskyblue;
+}
+
+.buttons {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.button_left {
+    margin-right: 30px;
+    padding: 7px 30px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px 30px;
+    color: var(--cor01);
+    font-size: 14px;
+}
+.button_left:hover {
+    transform: scale(1.05);
+    animation: 2s color_change infinite;
+  }
+@keyframes color_change {
+    0%, 100% {
+        color: var(--cor01);
+    }
+    50% {
+        color: var(--cor02);
+    }
+}
+
+button {
+    padding: 7px 30px;
+    border: 1px solid transparent;
+    border-radius: 10px 30px; 
+    color: var(--cor01);
+    cursor: pointer;
+    font-size: 13px;
+}
+button:hover {
+  transform: scale(1.05);
+  animation: 2s color_change infinite;
+}
+@keyframes color_change {
+    0%, 100% {
+        color: var(--cor01);
+    }
+    50% {
+        color: var(--cor02);
+    }
+}
+
+#agreement {
+  margin-right: 5px;
+}
+#agreement, #agreement_label {
+  display: inline-block;
+  width: auto;
+}
+

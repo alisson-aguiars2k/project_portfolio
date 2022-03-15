@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'Arima Madurai';
+  src: url(/desafios/projeto_portifolio/assets/font/Merienda-Bold.ttf) format('opentype');
+  font-weight: normal;
+}
+
+:root {
+  --cor1: rgb(3, 202, 202);
+  --cor2: white;
+  --cor3: black;
+
+  --fonte-destaque: 'Arima Madurai', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden; 
+}
+
+/* Header */
+header {
+  background-color: var(--cor2);
+}
+.header {
+  width: 100vw;
+  max-width: 1000px;
+  height: 50px;
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor2);
+  color: aqua;
+}
+.header_name {
+  color: var(--cor1);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.header_name span{
+  color: var(--cor3);
+}
+.header_menu ul,
+.header_menu li {
+  list-style: none;
+  display: flex;
+}
+.header_menu li {
+  padding: 0px 15px;
+}
+.header_menu li:first-child{
+  padding-right: 0px;
+}
+.header_menu a {
+  text-decoration: none;
+  color: var(--cor3);
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.header_menu a:hover {
+  color: var(--cor1);
+}
+
+/* Section banner */
+.section_banner {
+  background-color: var(--cor2);
+}
+.section_sub_banner {
+  max-width: 100vw;
+  width: 1000px;
+  height: calc(100vh - 50px);
+  margin: auto;
+  padding: 0px 20px;
+  background-color: var(--cor2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_sub_banner .title_banner {
+  color: var(--cor3);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title_banner p {
+  font-size: 24px;
+  font-family: var(--fonte-destaque);
+  color: var(--cor1);
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.title_banner h1 {
+  font-size: 56px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.title_banner h2 {
+  font-size: 40px;
+  font-family: var(--fonte-destaque);
+  color: var(--cor1);
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+.section_sub_banner .social_networks img {
+  width: 48px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.section_sub_banner .social_networks img:hover {
+  transform: scale(1.1);
+}
+.section_sub_banner .social_networks a {
+  margin: 5px;
+}
+.photo {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* About me */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.white {
+  background-color: var(--cor2);
+  max-width: 100vw;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.white .section_title,
+.white .section_description {
+  text-align: center;
+  font-weight: 400;
+}
+.white .section_title{
+  font-size: 40px;
+}
+.white .section_title h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.white .section_description h3{
+  font-size: 24px;
+  font-family: var(--fonte-destaque);
+  color: var(--cor1);
+}
+.white .section_body {
+  max-width: 1000px;
+  margin: auto;
+}
+.section_about_me {
+  display: flex;
+}
+.section_about_me__left h2 {
+  font-weight: 100;
+  background-image: linear-gradient(to right, rgba(3, 202, 202, 0.2), transparent);
+  padding: 5px 10px;
+  border-left: 1px solid var(--cor3);
+}
+.section_about_me__left p {
+  margin: 25px 50px 50px 0px;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.section_about_me__left ul {
+  list-style: none;
+  margin: 25px 50px 50px 0px;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.section_about_me__left li {
+  list-style: none;
+  margin: 0px 0px 10px 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.section_about_me__left a{
+  text-decoration: none;
+  color: var(--cor3);
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.section_about_me__left a:hover {
+  text-decoration: underline;
+  color: var(--cor1);
+}
+
+
+.section_about_me__left h2 {
+  margin-bottom: 10px;
+}
+
+/* Meus projetos */
+.section_projects {
+  width: 100vw;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.section_projects_photos {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section_projects__photo {
+  width: 470px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px 0px;
+  transition-duration: 0.3s
+}
+.section_projects__photoarea  {
+  margin: 10px;
+  width: 450px;
+  height: 197px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.section_projects__photoarea a{
+  margin: 10px;
+  width: 450px;
+  height: 197px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.section_projects__photo img {
+  width: 400px;
+  height: 197px;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+.section_projects__photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: inherit;
+  height: inherit;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 0.3s;
+}
+.section_projects__photoarea:hover .section_projects__photoinfo{
+  display: flex;
+}
+.section_projects__photoinfo h3 {
+  color: var(--cor2);
+  font-size: 24px;
+  font-weight: 400;
+}
+.section_projects__photoinfo span {
+  font-family: var(--fonte-destaque);
+  color: var(--cor1);
+} 
+.section_projects__photoinfo p {
+  text-align: center;
+  margin: 20px;
+  color: var(--cor2);
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.white .section_title,
+.white .section_description {
+  text-align: center;
+  font-weight: 400;
+}
+.white .section_title{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.white .section_description {
+  font-size: 24px;
+  color: var(--cor1);
+  margin-bottom: 50px;
+}
+.white .section_body {
+  max-width: 1000px;
+  margin: auto;
+}
+.social_networks {
+display: flex;
+justify-content: center;
+
+}
+.section_body .social_networks img {
+  width: 58px;
+  margin: 10px;
+}
+.section_body .social_networks img:hover {
+  transform: scale(1.1);
+}
+.section_body .social_networks a {
+  margin: 5px;
+}
+
+footer p {
+  padding: 2px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  background-color: var(--cor3);
+  color: var(--cor2);
+}
+footer span {
+  color: var(--cor1);
+}
+
+@media (max-width: 1000px) and (min-width:600px) {
+  .header_name {
+    font-size: 20px;
+  }
+  .header_menu a {
+    font-size: 20px;
+  }
+  .photo img{
+    max-width: 400px;
+  }
+ 
+  .white {
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_name {
+    font-size: 16px;
+  }
+  .header_menu a {
+    font-size: 12px;
+  }
+
+  .section_sub_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .title_banner h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+  }
+  .title_banner h2 {
+    font-size: 32px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
+  .photo img{
+    max-width: 300px;
+    margin-top: 25px;
+  }
+
+  .white {
+    margin: 0px 20px;
+  }
+  .white p, .white ul{
+    margin-right: 0px;
+  }
+  .white .section_title h2 {
+    font-size: 32px;
+  }
+  .white .section_description h3{
+    font-size: 20px;
+  }
+  .section_about_me__right img {
+    display: none;
+  }
+
+  .section_projects__photo {
+    width: 250px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .section_projects__photoarea  {
+    margin: 10px;
+    width: 230px;
+    height: 150px;
+  }
+  .section_projects__photoarea a{
+    margin: 10px;
+    width: 30px;
+    height: 150px;
+  }
+  .section_projects__photo img {
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+  }
+  .section_projects__photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 230px;
+    height: 150px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .section_projects__photoinfo h3 {
+    color: var(--cor2);
+    font-size: 10px;
+    margin: 0px;
+  } 
+  .section_projects__photoinfo p {
+    display: none;
+  }
+  .section_body .social_networks img {
+    width: 48px;
+    margin: 10px;
+  }
+}
