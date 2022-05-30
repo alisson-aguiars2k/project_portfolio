@@ -37,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--cor2);
-  color: aqua;
+  color: var(--cor1);
 }
 .header_name {
   color: var(--cor1);
@@ -142,6 +142,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .white .section_title,
 .white .section_description {
@@ -156,7 +157,7 @@ main {
   margin-bottom: 20px;
 }
 .white .section_description h3{
-  font-size: 24px;
+  font-size: 30px;
   font-family: var(--fonte-destaque);
   color: var(--cor1);
 }
@@ -166,6 +167,8 @@ main {
 }
 .section_about_me {
   display: flex;
+  margin-top: 50px;
+  font-size: 20px;
 }
 .section_about_me__left h2 {
   font-weight: 100;
@@ -178,6 +181,7 @@ main {
   text-align: justify;
   letter-spacing: 2px;
   line-height: 30px;
+  font-size: 20px;
 }
 .section_about_me__left ul {
   list-style: none;
@@ -191,12 +195,14 @@ main {
   margin: 0px 0px 10px 20px;
   letter-spacing: 2px;
   line-height: 30px;
+  font-size: 20px;
 }
 .section_about_me__left a{
   text-decoration: none;
   color: var(--cor3);
   letter-spacing: 2px;
   line-height: 30px;
+  font-size: 20px;
 }
 .section_about_me__left a:hover {
   text-decoration: underline;
@@ -226,8 +232,8 @@ main {
   width: 470px;
   margin-bottom: 20px;
   margin-right: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 10px 0px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
   transition-duration: 0.3s
 }
 .section_projects__photoarea  {
@@ -249,6 +255,7 @@ main {
   height: 197px;
   padding: 10px;
   transition-duration: 0.3s;
+  object-fit: cover;
 }
 .section_projects__photoinfo {
   position: absolute;
@@ -260,6 +267,8 @@ main {
   align-items: center;
   flex-direction: column;
   transition-duration: 0.3s;
+  border-radius: 10px;
+  border: 5px solid rgb(2, 132, 132);
 }
 .section_projects__photoarea:hover .section_projects__photoinfo{
   display: flex;
@@ -290,9 +299,10 @@ main {
   margin-bottom: 10px;
 }
 .white .section_description {
-  font-size: 24px;
+  font-size: 2px;
   color: var(--cor1);
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 .white .section_body {
   max-width: 1200px;
@@ -301,6 +311,7 @@ main {
 .social_networks {
 display: flex;
 justify-content: center;
+margin-top: 25px;
 
 }
 .section_body .social_networks img {
@@ -320,8 +331,6 @@ footer p {
   line-height: 30px;
   text-align: center;
   font-size: 12px;
-  background-color: var(--cor3);
-  color: var(--cor2);
 }
 footer span {
   color: var(--cor1);
